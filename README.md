@@ -8,7 +8,7 @@ import {
 
 const ESP32Monitor = () => {
   const [connected, setConnected] = useState(false);
-  const [ipAddress, setIpAddress] = useState('192.168.1.100'); // Cambia esto
+  const [ipAddress, setIpAddress] = useState('10.80.123.191'); // Cambia esto
   const [sensorData, setSensorData] = useState({
     caudal: { rpm: 0, flujo: 0, estado: 'SIN FLUJO' },
     temperatura: { valor: 0, estado: 'NORMAL' },
@@ -393,3 +393,4 @@ const ESP32Monitor = () => {
       {/* Historial */}
       <div className="max-w-7xl mx-auto">
         <div className="bg-slate-800/50 backdrop-blur rounded-lg p-4 md:p-6 border border-blue-500/
+
